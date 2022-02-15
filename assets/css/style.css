@@ -24,7 +24,6 @@
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
-  speak: none;
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -87,7 +86,7 @@ h4 {
 }
 
 .btn-border {
-    background-color: transparent;
+    background-color: white;
     color: #212121;
     border: 1px solid #212121; 
 }
@@ -367,7 +366,15 @@ html, body {
     height: 280px;
     margin-bottom: 30px;
     position: relative;
+    box-shadow: 5px 10px 8px #888888;
 }
+
+@media only screen and (max-width: 480px) {
+    .portfolio-item{
+        margin: 1rem;
+    }
+  }
+  
 
 .section-portfolio .col-md-4:nth-last-child(-n+3) .portfolio-item {
     margin-bottom: 0;
@@ -522,6 +529,26 @@ html, body {
 
 .section-form .btn {
     margin-top: 40px;
+}
+
+.form-style{
+    box-shadow: 3px 3px 10px #888888;
+    padding: 5rem;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    .form-style{
+        padding: 2rem 1rem;
+        margin: 1rem;
+    }
+}
+
+.errorText{
+    color: rgb(177, 0, 0);
+    margin-top: 1rem;
+    font-size: small;
 }
 
 /* FOOTER

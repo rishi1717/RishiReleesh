@@ -67,7 +67,7 @@
                         <li class="page-scroll"><a href="#about">About</a></li>
                         <li class="page-scroll"><a href="#service">Service</a></li>
                         <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
-                        <li class="page-scroll"><a href="#contact">Contact</a></li>
+                        <li class="page-scroll"><a href="#contactme">Contact</a></li>
                         
                     </ul><!-- /.navbar-nav -->
 
@@ -290,23 +290,26 @@
         </section><!-- /.section-counters -->
 
         <section id="contact" class="site-section section-form text-center">
-            <div class="container">
+            <div id="contactme" class="container form-style">
 
                 <h3>Contact</h3>
                 <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                <form>
+                <form id="gform" action="https://script.google.com/macros/s/AKfycbwIPCMeMOv5f-JmgDn6GVyTuP9UOxgAuuxc0djC/exec" method="post" onsubmit="return (validate())">
                     <div class="row">
                         <div class="col-sm-6">
-                            <input type="text" name="name" class="form-control mt-x-0" placeholder="Name">
+                            <input id="name" type="text" name="name" class="form-control mt-x-0" placeholder="Name">
+                            <p class="errorText" id="nameError"></p>
                         </div>
                         <div class="col-sm-6">
-                            <input type="email" name="email" class="form-control" placeholder="Email">   
+                            <input id="email" type="email" name="email" class="form-control" placeholder="Email"> 
+                            <p class="errorText" id="emailError" ></p>  
                         </div>
                         <div class="col-sm-12">
-                            <textarea name="message" id="mesaage" class="form-control" placeholder="Message"></textarea>
+                            <textarea name="message" id="message" class="form-control" placeholder="Message"></textarea>
+                            <p class="errorText" id="messageError"></p>
                         </div>
                     </div>
-                    <button href="#" class="btn btn-border" type="submit">Hire Me <span class="glyphicon glyphicon-send"></span></button>
+                    <button href="#" class="btn btn-border" type="submit">Contact me<span class="glyphicon glyphicon-send"></span></button>
                 </form>
             </div>
         </section><!-- /.section-form -->
@@ -451,6 +454,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
     <script src="assets/js/jquery.countTo.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/validation.js"></script>
   
 </body>
 </html>
