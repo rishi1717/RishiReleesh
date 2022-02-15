@@ -553,12 +553,10 @@ html, body {
 /* FOOTER
 ================================================== */
 .site-footer {
-    position: fixed;
     bottom: 0;
     padding: 30px 0;
     width: 100%;
     background-color: #212121;
-    z-index: -1;
 }
 
 .icon {
@@ -590,9 +588,9 @@ html, body {
 }
 
 a.twitter-bg:hover {color: #55acee;}
-a.facebook-bg:hover{color: #3b5998;}
+a.facebook-bg:hover{color: #af008c;}
 a.gplus-bg:hover{color: #007bb5;} 
-a.linkedin-bg:hover {color: #dd4b39;}
+a.linkedin-bg:hover {color: #000000;}
 a.icon-up-bg:hover {color: #212121;}
 
 .copyright {
