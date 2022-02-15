@@ -7,6 +7,7 @@ function validate() {
     document.getElementById('nameError').innerText="";
     document.getElementById('emailError').innerText="";
     document.getElementById('messageError').innerText="";
+    document.getElementById('submitted').innerText="";
       
     if( uname.value == "" || uname.value.length < 3 || uname.value == (/^\S*$/)) {
         if(uname.value == ""){
@@ -34,5 +35,31 @@ function validate() {
         message.focus();
         return false;
     }
-    return( true );
+    a = true;
+    return( a );
  }
+
+ $("#submit-form").submit((e)=>{
+    e.preventDefault()
+    if(a==true){
+        document.getElementById('submitted').innerText="Submitting...";
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbwIPCMeMOv5f-JmgDn6GVyTuP9UOxgAuuxc0djC/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                document.getElementById('submitted').innerText="Submitted succesfully";
+
+                document.getElementById('name').value = "";
+                document.getElementById('email').value = "";
+                document.getElementById('message').value  = "";
+                a = false;
+            },
+        error:function (err){
+            alert("Something Error")
+
+        }
+    }) 
+    }
+    
+})

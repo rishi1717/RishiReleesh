@@ -526,11 +526,6 @@ html, body {
 .section-form {
     padding-bottom: 120px;
 }
-
-.section-form .btn {
-    margin-top: 40px;
-}
-
 .form-style{
     box-shadow: 3px 3px 10px #888888;
     padding: 5rem;
@@ -549,6 +544,10 @@ html, body {
     color: rgb(177, 0, 0);
     margin-top: 1rem;
     font-size: small;
+}
+
+#submitted{
+    color: rgb(0, 85, 5);
 }
 
 /* FOOTER

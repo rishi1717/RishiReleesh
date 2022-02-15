@@ -40,6 +40,7 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 <body>
@@ -294,7 +295,7 @@
 
                 <h3>Contact</h3>
                 <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                <form id="gform" action="https://script.google.com/macros/s/AKfycbwIPCMeMOv5f-JmgDn6GVyTuP9UOxgAuuxc0djC/exec" method="post" onsubmit="return (validate())">
+                <form id="submit-form" action="" onsubmit="return (validate())">
                     <div class="row">
                         <div class="col-sm-6">
                             <input id="name" type="text" name="name" class="form-control mt-x-0" placeholder="Name">
@@ -309,7 +310,10 @@
                             <p class="errorText" id="messageError"></p>
                         </div>
                     </div>
+                    <p id="submitted"></p>
+                    
                     <button href="#" class="btn btn-border" type="submit">Contact me<span class="glyphicon glyphicon-send"></span></button>
+                    
                 </form>
             </div>
         </section><!-- /.section-form -->
